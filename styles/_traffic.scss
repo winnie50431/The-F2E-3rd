@@ -1,0 +1,69 @@
+main {
+  section.banner_traffic {
+    // border: 2px solid black;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    .container {
+      // background-color: black;
+      width: 50%;
+      display: flex;
+      gap: 1rem;
+      select {
+        flex-grow: 1;
+        box-shadow: 0px 2px 4px rgba(13, 11, 12, 0.2);
+      }
+    }
+  }
+  section.route {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    > p {
+      align-self: flex-end;
+    }
+    div.route_group {
+      background-color: #fff;
+      min-width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div.dus_stop {
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem;
+        width: 50%;
+        max-width: 500px;
+        .btn {
+          padding: 1rem 5rem 1rem;
+          cursor: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main > section > div.route_group > div.dus_stop {
+    width: 80vw;
+    .btn {
+      padding: 1rem 2rem 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 959px) {
+  main > section > div.route_group > div.dus_stop {
+    .btn {
+      padding: 1rem 2rem 1rem;
+    }
+  }
+}

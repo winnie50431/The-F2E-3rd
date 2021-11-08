@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* 相容性設定 */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 輔助項目 */
+.text_primary {
+  color: #ff1d6c;
+}
+
+.text_secondary {
+  color: #ffb72c;
+}
+
+.text_green {
+  color: #007350;
+}
+
+.input,
+.btn {
+  border-radius: 6px;
+  border: 0;
+  height: 40px;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn_primary {
+  background-color: #ff1d6c;
+  color: white;
+}
+
+.btn_secondary {
+  background-color: #ffb72c;
+  color: white;
+}
+
+.btn_outline_primary {
+  color: #ff1d6c;
+  background-color: #fff;
+  border: 1px solid #ff1d6c;
+}
+
+.btn_outline_gray {
+  color: #acacac;
+  background-color: #fff;
+  border: 1.5px solid #acacac;
+}
+
+.btn_outline_dark {
+  color: #000;
+  background-color: #fff;
+  border: 1.5px solid #000;
+}
+
+/* 排版 */
+main {
+  background-color: #f6f7fb;
+}
+
+main section.topic h3 {
+  margin-bottom: 2rem;
+}
+
+main section.topic div.card_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.topic div.card_group div.card {
+  height: 20vw;
+  width: 15vw;
+  margin: 0.5rem;
+  background-color: #fff;
+  -ms-flex-preferred-size: 152px;
+      flex-basis: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.topic div.card_group div.card div.img_container {
+  width: 16vw;
+  height: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border: 1vw solid #fff;
+}
+
+main section.topic div.card_group div.card p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+main section.topic div.card_group div.card span {
+  color: #007350;
+  font-size: 0.75rem;
+}
+
+main section.topic div.card_group div.card_activity {
+  background-color: #fff;
+  width: 520px;
+  height: 230px;
+  padding: 16px;
+  margin-bottom: 1rem;
+}
+
+main section.topic div.card_group div.card_activity .activity_img {
+  float: left;
+  margin-right: 1rem;
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.topic div.card_group div.card_activity .activity_content {
+  font-size: 14px;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.topic div.card_group div.card_activity .activity_content h4 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+main section.topic div.card_group div.card_activity .activity_content p {
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+
+main section.topic div.card_group div.card_activity .activity_content .btn {
+  float: right;
+}
+
+.header {
+  height: 104px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header ul li {
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header ul li a {
+  margin: 0.5rem;
+  border-bottom: 1.5px solid;
+}
+
+section.banner {
+  height: 536px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1508248467877-aec1b08de376?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+section.banner ::before {
+  background-color: black;
+}
+
+section.banner .container h1 {
+  font-size: 3rem;
+  text-shadow: 0px 4px 3px rgba(13, 11, 12, 0.2);
+}
+
+section.banner .container p {
+  margin: 1rem 0;
+}
+
+section.banner .container button {
+  width: 40px;
+  text-align: center;
+}
+
+div.toolbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+div.toolbox button {
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+}
+
+div.toolbox input {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-shadow: 0px 4px 3px rgba(13, 11, 12, 0.2);
+          box-shadow: 0px 4px 3px rgba(13, 11, 12, 0.2);
+}
+
+div.toolbox select {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card_map {
+  width: 200px;
+  height: 245px;
+  background-image: url("https://images.unsplash.com/photo-1609147110688-83b5fd1288e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
+  background-size: cover;
+  border: 14px solid #ffffff;
+  -webkit-box-shadow: 0px 4px 3px rgba(13, 11, 12, 0.2);
+          box-shadow: 0px 4px 3px rgba(13, 11, 12, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 425px) {
+  main section.topic {
+    margin: 2rem 1.5rem 0;
+  }
+  main section.topic div.card {
+    min-height: 188px;
+    min-width: 152px;
+  }
+  main section.topic div.card div.img_container {
+    min-height: 96px;
+    min-width: 128px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  section.topic {
+    margin: 2rem 1.5rem 0;
+  }
+  section.topic h4 {
+    font-size: 14px;
+  }
+  section.topic div.card_activity {
+    max-width: 298px;
+    max-height: 120px;
+  }
+  section.topic div.card_activity p {
+    display: none;
+  }
+  section.topic div.card_activity button {
+    display: none;
+  }
+}
+
+main section.banner_traffic {
+  width: 100%;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+main section.banner_traffic .container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+main section.banner_traffic .container select {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-shadow: 0px 2px 4px rgba(13, 11, 12, 0.2);
+          box-shadow: 0px 2px 4px rgba(13, 11, 12, 0.2);
+}
+
+main section.route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vw;
+}
+
+main section.route > p {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+main section.route div.route_group {
+  background-color: #fff;
+  min-width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.route div.route_group div.dus_stop {
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem;
+  width: 50%;
+  max-width: 500px;
+}
+
+main section.route div.route_group div.dus_stop .btn {
+  padding: 1rem 5rem 1rem;
+  cursor: none;
+}
+
+@media screen and (max-width: 425px) {
+  main > section > div.route_group > div.dus_stop {
+    width: 80vw;
+  }
+  main > section > div.route_group > div.dus_stop .btn {
+    padding: 1rem 2rem 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 959px) {
+  main > section > div.route_group > div.dus_stop .btn {
+    padding: 1rem 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
