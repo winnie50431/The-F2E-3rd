@@ -113,25 +113,25 @@
       <!-- 搜尋欄/start -->
       <section class="banner_traffic">
         <div class="container">
-          <select class="btn" name="" id="">
+          <select class="btn" name="citySelect" id="citySelect">
             <option value="">選擇縣市</option>
           </select>
-          <select class="btn" name="" id="">
+          <select class="btn" name="routeSelect" id="routeSelect">
             <option value="">選擇路線</option>
           </select>
-          <button class="btn btn_primary">
+          <button class="btn btn_primary" id="searchBus">
             <i class="fas fa-search"></i>
           </button>
         </div>
       </section>
       <!-- 搜尋欄/end -->
       <!-- 路線/start -->
-      <section class="route">
+      <section class="main_center">
         <p class="text_primary">*每隔 15 秒自動更新</p>
-        <div class="route_group">
-          <div class="dus_stop">
-            <p class="btn btn_outline_dark">未發車</p>
-            <p>1港坪運動公園</p>
+        <div class="routes">
+          <!-- <div class="dus_stop">
+            <p class="btn_outline_dark">未發車</p>
+            <p class="routeName">1港坪運動公園</p>
           </div>
           <div class="dus_stop">
             <p class="btn btn_outline_gray">未發車</p>
@@ -144,6 +144,10 @@
           <div class="dus_stop">
             <p class="btn btn_secondary">離站中</p>
             <p>4港坪運動公園</p>
+          </div> -->
+          <div class="route">
+            <span class="time">10:00</span>
+            <p class="bus">蘭雅國中</p>
           </div>
         </div>
       </section>
@@ -151,4 +155,13 @@
     </main>
     <!-- <script src="/app.js"></script> -->
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"
+  ></script>
+  <script src="/app.js"></script>
 </html>
