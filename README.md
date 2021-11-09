@@ -1,6 +1,7 @@
 # 實作紀錄
 
-The F2E 網頁開發紀錄 #手刻 RWD # Axios 接 API
+The F2E 網頁開發紀錄。 #手刻 RWD #axios #TPX API
+想練切版和複習原生 JS ，所以沒有套框架。但為了功能開發方便，還是引入了 axios。
 
 ### 頁面
 
