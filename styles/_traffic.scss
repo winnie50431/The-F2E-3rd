@@ -27,56 +27,18 @@ main {
     > p {
       align-self: flex-end;
     }
-    // div.routes{
-    //   div.route{
-
-    //   }
-    // }
-
-    // div.route_group {
-    //   background-color: #fff;
-    //   width: 90vw;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   flex-direction: column;
-    //   div.dus_stop {
-    //     border: 2px solid #000;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-around;
-    //     margin: 1rem;
-    //     // width: 50%;
-    //     // max-width: 500px;
-    //     .btn {
-    //       // padding: 1rem 5rem 1rem;
-    //       // cursor: none;
-    //     }
-    //   }
-    // }
-  }
-}
-
-@media screen and (max-width: 550px) {
-  main {
-    section.route {
-      div.routes {
-        div.route {
-          width: 80vw;
-        }
-      }
+    section.routes {
+      background-color: white;
+      width: 100%;
+      flex: 1 1 500px;
+      // div.route {
+      // }
     }
   }
 }
 
-@media screen and (max-width: 700px) {
-  main {
-    section.route {
-      div.route_group {
-        div.bus_stop {
-          width: 80vw;
-        }
-      }
-    }
-  }
+@media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width: 720px) {
 }
